@@ -1,0 +1,1 @@
+include ':fphi-selphid-core-widget-android-1.0' ,':fphi-selphid-widget-android-1.0', ':LibBlinkID'

@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.facephi.widget.pe"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.facephi.widget.pe"
+    },
+    "fphi-cordova-selphid-widget-plugin": {
+      "PACKAGE_NAME": "com.facephi.widget.pe"
+    }
+  },
+  "dependent_plugins": {}
+}

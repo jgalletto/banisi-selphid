@@ -1,0 +1,178 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.CAMERA\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.camera\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\" />",
+              "count": 1
+            }
+          ],
+          "/manifest/application": [
+            {
+              "xml": "<activity android:configChanges=\"orientation\" android:label=\"WidgetSelphIDAndroid\" android:name=\"com.facephi.FPhiWidgetSelphIDAndroid.ui.FPhiWidgetSelphIDAndroid\" android:screenOrientation=\"portrait\" />",
+              "count": 1
+            },
+            {
+              "xml": "<activity android:configChanges=\"orientation\" android:label=\"WidgetSelphIDPermission\" android:name=\"com.facephi.FPhiWidgetSelphIDAndroid.ui.FPhiWidgetSelphIDPermission\" android:screenOrientation=\"portrait\" />",
+              "count": 1
+            },
+            {
+              "xml": "<activity android:configChanges=\"orientation\" android:label=\"WidgetSelphIDPermission\" android:name=\"com.facephi.selphid.Widget\" android:screenOrientation=\"portrait\" />",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"WidgetSelphID\"><param name=\"android-package\" value=\"facephi.plugin.widget.WidgetSelphID\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.facephi.widget.pe"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.facephi.widget.pe"
+    },
+    "fphi-cordova-selphid-widget-plugin": {
+      "PACKAGE_NAME": "com.facephi.widget.pe"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-network-information.network",
+      "file": "plugins/cordova-plugin-network-information/www/network.js",
+      "pluginId": "cordova-plugin-network-information",
+      "clobbers": [
+        "navigator.connection",
+        "navigator.network.connection"
+      ]
+    },
+    {
+      "id": "cordova-plugin-network-information.Connection",
+      "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+      "pluginId": "cordova-plugin-network-information",
+      "clobbers": [
+        "Connection"
+      ]
+    },
+    {
+      "id": "fphi-cordova-selphid-widget-plugin.WidgetSelphIDConfig",
+      "file": "plugins/fphi-cordova-selphid-widget-plugin/www/WidgetSelphIDConfig.js",
+      "pluginId": "fphi-cordova-selphid-widget-plugin",
+      "clobbers": [
+        "facephi.selphid.config"
+      ]
+    },
+    {
+      "id": "fphi-cordova-selphid-widget-plugin.WidgetSelphIDErrorType",
+      "file": "plugins/fphi-cordova-selphid-widget-plugin/www/WidgetSelphIDErrorType.js",
+      "pluginId": "fphi-cordova-selphid-widget-plugin",
+      "clobbers": [
+        "facephi.selphid.error"
+      ]
+    },
+    {
+      "id": "fphi-cordova-selphid-widget-plugin.WidgetSelphIDFinishStatus",
+      "file": "plugins/fphi-cordova-selphid-widget-plugin/www/WidgetSelphIDFinishStatus.js",
+      "pluginId": "fphi-cordova-selphid-widget-plugin",
+      "clobbers": [
+        "facephi.selphid.finish"
+      ]
+    },
+    {
+      "id": "fphi-cordova-selphid-widget-plugin.WidgetSelphIDOperation",
+      "file": "plugins/fphi-cordova-selphid-widget-plugin/www/WidgetSelphIDOperation.js",
+      "pluginId": "fphi-cordova-selphid-widget-plugin",
+      "clobbers": [
+        "facephi.selphid.operation"
+      ]
+    },
+    {
+      "id": "fphi-cordova-selphid-widget-plugin.WidgetSelphIDResult",
+      "file": "plugins/fphi-cordova-selphid-widget-plugin/www/WidgetSelphIDResult.js",
+      "pluginId": "fphi-cordova-selphid-widget-plugin",
+      "clobbers": [
+        "facephi.selphid.result"
+      ]
+    },
+    {
+      "id": "fphi-cordova-selphid-widget-plugin.WidgetSelphIDUtils",
+      "file": "plugins/fphi-cordova-selphid-widget-plugin/www/WidgetSelphIDUtils.js",
+      "pluginId": "fphi-cordova-selphid-widget-plugin",
+      "clobbers": [
+        "facephi.selphid.utils"
+      ]
+    },
+    {
+      "id": "fphi-cordova-selphid-widget-plugin.WidgetSelphIDFacephi",
+      "file": "plugins/fphi-cordova-selphid-widget-plugin/www/WidgetSelphIDFacephi.js",
+      "pluginId": "fphi-cordova-selphid-widget-plugin",
+      "clobbers": [
+        "facephi.selphid.universal"
+      ]
+    },
+    {
+      "id": "fphi-cordova-selphid-widget-plugin.WidgetSelphIDScanMode",
+      "file": "plugins/fphi-cordova-selphid-widget-plugin/www/WidgetSelphIDScanMode.js",
+      "pluginId": "fphi-cordova-selphid-widget-plugin",
+      "clobbers": [
+        "facephi.selphid.scanmode"
+      ]
+    },
+    {
+      "id": "fphi-cordova-selphid-widget-plugin.WidgetSelphIDDocumentType",
+      "file": "plugins/fphi-cordova-selphid-widget-plugin/www/WidgetSelphIDDocumentType.js",
+      "pluginId": "fphi-cordova-selphid-widget-plugin",
+      "clobbers": [
+        "facephi.selphid.doctype"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-network-information": "1.2.1",
+    "cordova-plugin-whitelist": "1.3.3",
+    "fphi-cordova-selphid-widget-plugin": "1.2.4"
+  }
+}

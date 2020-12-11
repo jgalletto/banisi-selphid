@@ -1,0 +1,50 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@^1.2.2"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-android-support-v4-jar": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-android-support-v4-jar@23.2.1"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-compat": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-compat@^1.0.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "fphi-cordova-selphid-widget-plugin": {
+    "source": {
+      "type": "local",
+      "path": "/Users/joaquingalletto/Documents/Widgets/cordova/fphi-selphid-widget-cordova-standard-ml-1.2.4/examples/FPhi.SelphID.Widget.Cordova.ClientExample/node_modules/fphi-selphid-plugin-widget"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-network-information": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-network-information@1.2.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-androidx": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-androidx"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

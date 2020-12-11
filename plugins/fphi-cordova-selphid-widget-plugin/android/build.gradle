@@ -1,0 +1,22 @@
+repositories{
+    maven {
+        url "https://maven.google.com"
+    }
+    jcenter()
+    flatDir {
+        dirs 'aar'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.aar'], dir: 'aar')
+    implementation 'com.google.firebase:firebase-ml-vision:24.0.3'
+    implementation 'com.google.firebase:firebase-core:17.4.0'
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>FacePhi Cordova Example</title>
+    <script src="cordova.js" type="text/javascript"></script>
+    <script src="scripts/lib/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="scripts/lib/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <title>FacePhi Cordova Example</title>
+</head>
+<body>
+
+    <div data-role="page" id="authPage">
+
+		<script src="scripts/ui/strings.js" type="text/javascript"></script>
+        <script src="scripts/ui/wizardCapture.js" type="text/javascript"></script>
+
+        <div data-role="header" data-theme="a">
+            <a href="index.html" data-icon="carat-l" data-rel="back">Back</a>
+            <h1 class="fphi-ui-title-width">Wizard Capture Process</h1>
+        </div>
+        
+        <div data-role="popup" id="popInfo" data-overlay-theme="b" data-theme="b" data-dismissible="false" class="popUpWidth">
+            <div data-role="header" data-theme="a">
+                <h1 id="popTitle"></h1>
+            </div>
+            <div role="main" class="ui-content" align="right">
+                <p id="popMessage" align="center"></p>
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Close</a>
+            </div>
+        </div>
+
+        <div id="userList" data-role="main" class="ui-content"></div>
+
+        <div data-role="footer" class="fphi-ui-footer">
+            <h1>2019&copy; FacePhi. All rights reserved.</h1>
+        </div>
+
+    </div>
+</body>
+</html>

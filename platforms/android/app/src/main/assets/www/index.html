@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="cordova.js" type="text/javascript"></script>
+    <script src="scripts/lib/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="scripts/lib/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script src="scripts/lib/platformOverrides.js" type="text/javascript"></script>
+    <script src="scripts/proxy/serverConfig.js" type="text/javascript"></script>
+    <script src="scripts/proxy/serverProxy.js" type="text/javascript"></script>
+    <script src="scripts/ui/strings.js" type="text/javascript"></script>
+	 
+    <title>FacePhi Cordova Example</title>
+</head>
+<body>
+
+    <div data-role="page" id="indexPage">
+
+        <script src="scripts/ui/index.js" type="text/javascript"></script>
+		<script src="scripts/ui/standardCapture.js" type="text/javascript"></script>
+		<script src="scripts/ui/wizardCapture.js" type="text/javascript"></script>
+		
+        <div data-role="header" data-theme="a">
+            <h1 class="fphi-ui-title-width">FacePhi Cordova Example</h1>
+        </div>
+
+        <div data-role="main" class="fphi-ui-body">
+            <div data-role="controlgroup" data-type="vertical">
+                <button class="ui-btn fphi-ui-btn-color-a" onclick="goStandardCapture();">Standard Capture</button>
+				<span class="fphi-ui-btn-margin-a"></span>
+                <button class="ui-btn ui-btn-icon-left fphi-ui-btn-color-b" onclick="goWizardCapture();">Wizard Capture</button>
+				<span class="fphi-ui-btn-margin-a"></span>
+            </div>
+        </div>
+
+		
+        <div data-role="footer" class="fphi-ui-footer">
+            <h1>2018&copy; FacePhi. All rights reserved.</h1>
+        </div>
+
+    </div>
+</body>
+</html>

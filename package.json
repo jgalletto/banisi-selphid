@@ -1,0 +1,24 @@
+{
+  "name": "CordovaFacePhi",
+  "version": "1.0.0",
+  "dependencies": {
+    "cordova-plugin-network-information": "1.2.1",
+    "cordova-plugin-whitelist": "^1.2.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-whitelist": {},
+      "fphi-cordova-selphid-widget-plugin": {},
+      "cordova-plugin-androidx": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  },
+  "devDependencies": {
+    "cordova-android": "^9.0.0",
+    "cordova-plugin-androidx": "^3.0.0",
+    "fphi-selphid-plugin-widget": "file:../../lib/fphi-cordova-selphid-widget-plugin"
+  }
+}

@@ -1,0 +1,90 @@
+﻿
+.fphi-ui-footer {
+
+    position: absolute !important;
+    bottom: 0;
+    width: 100%;
+}
+
+.fphi-ui-body {
+
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:30%;
+}
+
+.fphi-ui-title-width {
+
+    width: 40%;
+}
+
+
+.fphi-ui-list {
+
+    max-height: 80% !important;
+    min-height: 80% !important;
+    height: 80% !important;
+    background: #14a3c7;
+}
+
+.ui-header .ui-title {
+    width: auto;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.fphi-ui-btn-margin-a{
+
+    margin:0 .2em;
+}
+
+.fphi-ui-btn-color-a{
+
+    background:#10a3c7 !important;
+    color: white !important;
+}
+
+.fphi-ui-btn-color-b{
+
+    background:#06d48b !important;
+    color: white !important;
+}
+
+.fphi-ui-btn-color-c{
+
+    background:#a8a8a8 !important;
+    color: white !important;
+}
+
+.fphi-ui-btn-color-d{
+
+    background:#06d48b !important;
+    color: white !important;
+}
+
+.fphi-ui-btn-color-f{
+
+    background:#14a3c7 !important;
+    color: white !important;
+}
+
+.ui-listview .ui-li-icon {
+    max-height: 28px !important;
+    max-width: 28px !important;
+    left: 10px;
+    right: 10px;
+    top: .9em;
+}
+
+.deleteLink {
+
+    color: black;
+}
+
+.popUpWidth {
+    
+    max-width:400px;
+}
+
+
